@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-orange: #db4100;
+  --brand-light:  #f59b3e;
+  --brand-aqua:   #80e6b5;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  @apply antialiased text-zinc-900 bg-white;
+}
+
+/* Dropdown animation */
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.dropdown-enter { animation: fadeDown 0.18s ease-out forwards; }
+
+/* Reveal animation */
+@keyframes revealUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.reveal { animation: revealUp 0.6s ease-out forwards; }
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f4f4f5; }
+::-webkit-scrollbar-thumb { background: #db4100; border-radius: 3px; }
