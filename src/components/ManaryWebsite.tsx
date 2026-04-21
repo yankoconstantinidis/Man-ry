@@ -1185,7 +1185,7 @@ function About() {
       </div>
       <div className="max-w-5xl mx-auto px-6 relative z-10">
         <div className="grid md:grid-cols-2 gap-14 items-center">
-          <Reveal direction="left">
+          <Reveal>
             <p className="text-xs font-black text-[#80e6b5] uppercase tracking-widest mb-4">{a.label}</p>
             <h2 className="text-4xl font-black text-white mb-6">{a.title}</h2>
             <p className="text-zinc-300 text-lg leading-relaxed mb-8">{a.body}</p>
